@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar'
 import styles from '../styles/Home.module.css'
 import ConversationList from '../components/ConversationList';
 import logo from '../assets/icons/logo.png'
+import ChatView from '../components/ChatView';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         {/* ConversationList */}
         <ConversationList />
         {/* ChatView */}
+        <ChatView />
 
       </div>
       
