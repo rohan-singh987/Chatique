@@ -8,7 +8,7 @@ import help from '../assets/icons/help.svg'
 import pin from '../assets/icons/pin.svg'
 import at from '../assets/icons/at.svg'
 import Image from 'next/image'
-// import ethLogo from '../assets/eth.png'
+import ethereum from '../assets/ethereum.png'
 
 const ChatHeader = () => {
   return (
@@ -21,6 +21,27 @@ const ChatHeader = () => {
           className={styles.svg}
         />
         <h3 className={styles.title}>Name</h3>
+        <div className={styles.chatHeaderStatus} id='online' />
+      </div>
+      <div className={styles.connectWallet} onClick={() => connectWallet()} >Connect Wallet  </div>
+
+      <div className={styles.headerIconsContainer}>
+        <div className={styles.headerItem}>
+          <Image 
+            height={30}
+            width={30}
+            src={phone}
+            className={styles.iconss}
+          />
+        </div>
+        <div className={styles.headerItem}>
+          <Image 
+            height={30}
+            width={30}
+            src={video}
+            className={styles.iconss}
+          />
+        </div>
       </div>
     </div>
   )
